@@ -1,0 +1,77 @@
+
+body{
+ background: #f8f8f8; 
+}
+
+.perfil{
+  margin-top: 120px;
+  background: #0D1031; 
+  display: grid;
+  
+  align-items: center;
+  justify-content: center;
+
+}
+.name{
+  color: #f8f8f8;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.fotoperfil{
+justify-content: center;
+margin-bottom: -40px;
+}
+
+.fotoperfil img{
+  width: 200px;
+  border-radius: 50%;
+  border: solid 8px #f8f8f8;
+  position: relative;
+  top: -100px;
+
+}
+
+
+.socialMedias{
+  text-align: center;
+  
+}
+
+.socialMedias a{
+padding-left: 14px;
+padding-top: 20px;
+  
+}
+a img{
+ width: 35px;
+    
+  }
+
+header#header {
+  margin: 60px 0px 10px 100px;
+}
+
+
+strong{
+  font-size: 20px;
+}
+p{
+  font-size: 20px;
+}
+
+.conteudo{
+  text-justify: distribute;
+  align-content: center;
+  padding: 50px;
+  display: block;
+  justify-content: center;
+}
+
+.btn{
+  justify-content: center;
+  align-items: center;
+}
