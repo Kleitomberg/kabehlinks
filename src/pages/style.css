@@ -74,4 +74,165 @@ p{
 .btn{
   justify-content: center;
   align-items: center;
+  background-color: #0D1031;
+  color: #f8f8f8;
+  
 }
+
+.btn:hover{
+  background-color: transparent;
+  border: 2px solid #0D1031;
+  color: #0D1031;
+}
+
+/*Skills*/
+
+
+.skills-container{
+  row-gap: 0;
+  margin-top: 45px;
+}
+
+.skills-header{
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.skills-icon,
+.skills-arrow{
+
+  font-size: 2rem;
+  color: #0D1031;
+}
+
+.skills-icon{
+  margin-right: 15px;
+  margin-top: -25px;
+  
+  
+}
+
+
+.skills-title{
+  font-size: 10px;
+}
+
+.skills-subtitle{
+  font-size: 16px;
+  float: left;
+  
+}
+
+.skills-arrow{
+  margin-left: auto;
+  transition: 0 s;
+}
+
+.skills-list{
+  row-gap: 1.5rem;
+  padding-left: 2.7rem;
+}
+
+.skills-titles{
+  display: flex;
+justify-content: space-between;
+margin-bottom: 10px;
+}
+
+.skills-name{
+  font-weight: medium;
+  font-size: 16px;
+}
+
+.skills-bar,
+.skills-porcentagem{
+
+  height: 5px;
+  border-radius: .25rem;
+}
+
+.skills-bar{
+  background-color: #bec3e7;
+}
+
+.skills-porcentagem{
+  display: block;
+  background-color: #02030f;
+}
+
+
+.skills-html{
+width: 90%;
+}
+.skills-css{
+  width: 80%;
+}
+
+.skills-js{
+  width: 55%;
+}
+
+.skills-react{
+  width: 40%;
+}
+
+
+.skills-php{
+  width: 60%;
+}
+.skills-fire{
+  width: 50%;
+}
+.skills-node{
+  width: 40%;
+}
+
+.skills-ps{
+  width: 70%;
+}
+
+.skills-ink{
+  width: 60%;
+}
+
+.skills-figma{
+  width: 80%;
+}
+
+.skills-canva{
+  width: 90%;
+}
+
+.skills-vegas{
+  width: 80%;
+}
+.skills-ae{
+  width: 70%;
+}
+
+
+.skills-close .skills-list{
+  height: 0;
+  overflow: hidden;
+}
+.skills-open .skills-list{
+  height: max-content;
+  margin-bottom: 20px;
+
+}
+
+.skills-open .skills-arrow{
+  transform: rotate(-180deg);
+}
+
+.socialMedias i{
+  color: #f8f8ff;
+  width: 50px !important;
+}
+
+.social-icons{
+  font-size: 1.45rem;
+}
+
