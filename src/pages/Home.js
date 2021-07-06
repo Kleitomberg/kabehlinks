@@ -1,16 +1,9 @@
 import { useState } from 'react';
 import perfilImg from '../assets/perfil.jpg';
-
-//import emailImg from '../assets/email.png';
-//import instaImg from '../assets/instagram.png';
-//import youtubeImg from '../assets/yt.png';
-//import linkedImg from '../assets/linkedin.png';
+import Modal from 'react-modal';
+import emailjs from 'emailjs-com';
+import fecharImg from '../assets/fechar.png';
 import classNames from 'classnames';
-
-
-
-
-
 
 
 
@@ -29,6 +22,9 @@ export function Home(){
       const [ocultSkillsDesigner, setOcultSkillsDesigner] = useState(false);
       const [ocultSkillsVideo, setOcultSkillsVideo] = useState(false);
 
+     // let subtitle;
+      const [modalIsOpen, setIsOpen] = useState(false);
+
             function onClickOpenFrontend(){
                   setOcultSkills(!ocultSkills);
             } 
@@ -41,8 +37,36 @@ export function Home(){
             function onClickOpenVideo(){
                   setOcultSkillsVideo(!ocultSkillsVideo);
             } 
+
+           
+
+            function openModal() {
+              setIsOpen(true);
+            }
+          
+            function afterOpenModal() {
+              // references are now sync'd and can be accessed.
+             // subtitle.style.color = '#f00';
+            }
+          
+            function closeModal() {
+              setIsOpen(false);
+            }
+
+      function sendEmail(e) {
+                  e.preventDefault();
+              
+                  emailjs.sendForm('entrarEmContato', 'template_in1fcc4', e.target, 'user_Zulyvfs06j209hrvCgF4r')
+                    .then((result) => {
+                       alert('Mensagem enviada com sucesso!');
+                    }, (error) => {
+                        alert(error.message);
+                    });
+                    e.target.reset();
+                }
  
-return(
+
+      return(
 
 
     <div className="homepage">       
@@ -66,7 +90,7 @@ return(
                 <i class="uil uil-youtube w-50"></i>
                 </a>
 
-                <a target="blank" href="github.com/Kleitomberg" className="social-icons">
+                <a target="blank" href="https://github.com/Kleitomberg" className="social-icons">
                
                 <i class="uil uil-github-alt"></i>
                 </a>
@@ -346,11 +370,55 @@ return(
 
             <div className="d-grid col-4 mx-auto mb-5"> 
 
-            <button className="btn "> Entre em contato
+            <button onClick={openModal} className="btn "> Entre em contato
             <i class="uil uil-message m-2 text-end"></i>
             </button>
 
             </div>
+            <Modal
+                  isOpen={modalIsOpen}
+                  onAfterOpen={afterOpenModal}
+                  onRequestClose={closeModal}  
+                  
+                  
+                  contentLabel="Contato"
+                  >
+                 
+                 <div className="modal-delete"> 
+                  <button  className="text-right fechar" onClick={closeModal}>
+                        <img alt="fechar" className="imagefecharmodal" src={fecharImg}/> 
+                        
+                        
+                        </button>
+
+                  <h2 className="text-center contato">Contato</h2>
+
+                  <form className="contact-form" onSubmit={sendEmail}>
+                  <div className="row pt-4 mx-auto">
+                        
+                        <div className="col-lg-8 col-sm-12 form-group mx-auto mb-2">
+                            <label>Nome</label>
+                            <input type="text" autoFocus className="form-control" required placeholder="Nome" name="name"/>
+                        </div>
+                        <div className="col-lg-8 col-sm-12 form-group pt-1 mx-auto mb-2">
+                        <label>Email</label>
+                            <input type="email" className="form-control" required placeholder="Seu email" name="email"/>
+                        </div>
+
+                        <div className="col-lg-8 col-sm-12 form-group pt-1 mx-auto">
+                        <label>Mensagem</label>
+                            <textarea className="form-control" id="" cols="30" rows="8" required placeholder="Sua mensagem" name="message"></textarea>
+                        </div>
+                        <div className="col-lg-8 col-sm-12 pt-3 mx-auto text-center">
+                            <input type="submit" className="btn btn-info text-center" value="Enviar mensagem"></input>
+                        </div>
+                    </div>              
+                  
+                  </form>
+                  </div>
+      </Modal>
+
+
 
         </main>
 

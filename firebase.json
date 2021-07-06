@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "kabeh-links",
+    "public": "build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

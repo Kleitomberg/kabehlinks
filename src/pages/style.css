@@ -76,6 +76,8 @@ p{
   align-items: center;
   background-color: #0D1031;
   color: #f8f8f8;
+  width: max-content;
+    justify-self: center;
   
 }
 
@@ -236,3 +238,29 @@ width: 90%;
   font-size: 1.45rem;
 }
 
+
+.fechar{
+  background: transparent;
+  border: none;
+  width: 20px;
+  display: flex;
+  align-items: flex-end;
+  float: right;
+  padding-right: 20px;
+  font-size: 20px;
+}
+
+.contato{
+  font-size: 25px;
+  padding-bottom: 0;
+  padding-top: 10px;
+}
+
+.imagefecharmodal{
+  width: 30px;
+  margin-top: -10px;
+}
+
+textarea{
+  resize: none;
+}

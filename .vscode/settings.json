@@ -1,0 +1,5 @@
+{
+  "editor.suggest.showStatusBar": true,
+  "workbench.view.alwaysShowHeaderActions": true,
+  "workbench.editor.scrollToSwitchTabs": true
+}
