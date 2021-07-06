@@ -26,7 +26,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/file/58GTyesIHz1hccjK4OP3JX/Letmeask-Copy?fuid=753408499345914050). É necessário ter conta no [Figma](http://figma.com/) para acessá-lo.
+Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/file/cIPA0uy1ivgP2ERuSce0tn/Kabehlinks?node-id=0%3A1). É necessário ter conta no [Figma](http://figma.com/) para acessá-lo.
 
 ## 🌐 Deploy
 
