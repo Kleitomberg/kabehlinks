@@ -1,4 +1,39 @@
-# Getting Started with Create React App
+<h1 align="center">
+  <img alt="kabehlinks" title="kabehlinks" src="https://github.com/Kleitomberg/kabehlinks/blob/master/redme/Design%20sem%20nome%20(13)%20(1)%20(1).png" />
+</h1>
+
+<p align="center">
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-Deploy">Deploy</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-como-executar">Como executar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  
+</p>
+
+
+Projeto pessoal para exibição de meu portifolio, no mesmo abordo sobre mim, minhas habilidades, curriculo e certificações, podendo adicionar serviços futuramente.  
+<br>
+
+![kabehlinks](https://github.com/Kleitomberg/kabehlinks/blob/master/redme/RESPONSIVE%20(1).png)
+
+
+## ✨ Tecnologias
+
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+
+- [React](https://reactjs.org)
+- [Firebase](https://firebase.google.com/)
+
+## 🔖 Layout
+
+Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/file/58GTyesIHz1hccjK4OP3JX/Letmeask-Copy?fuid=753408499345914050). É necessário ter conta no [Figma](http://figma.com/) para acessá-lo.
+
+## 🌐 Deploy
+
+Utilizando uma das funcionalidades disponibilizadas pelo firebase, a aplicação encontra-se hospedada no seguinte [link](https://kabeh-links.web.app/).
+
+
+## 👨‍💻 Como executar
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
