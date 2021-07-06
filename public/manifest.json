@@ -1,6 +1,7 @@
 {
   "short_name": "KabehLinks",
   "name": "KabehLinks",
+  
   "icons": [
     {
       "src": "favicon.ico",
@@ -10,7 +11,8 @@
     {
       "src": "logo192.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "192x192",
+	  "purpose": "any maskable"
     },
     {
       "src": "logo512.png",
@@ -20,6 +22,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#1dbcfe",
-  "background_color": "#f8f8f8"
+  "theme_color": "#040512",
+  "background_color": "#040512"
 }

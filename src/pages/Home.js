@@ -11,6 +11,8 @@ import classNames from 'classnames';
 
 import './style.css';
 
+import './floatButton.css';
+
 
 
 
@@ -417,10 +419,38 @@ export function Home(){
                   </form>
                   </div>
       </Modal>
-
-
-
         </main>
+
+        <div class="fab"  ontouchstart="">
+
+            <button class="main" >
+       
+            <i class="uil uil-bars"></i>    
+           
+            </button>
+
+            <ul>
+            <li className="curriculo">
+                  <label for="opcao1" className="curriculo">Currículo</label>
+                  <button id="opcao1">
+                  <a target="_blank" href="https://drive.google.com/file/d/1dWEdPggibduzif_9wARwV1YPErvisJ4O/view?usp=sharing">
+                  <i class="uil uil-book"></i>
+                  </a>
+                  </button>
+            </li>
+            <li>
+                  <label for="opcao2">Certificados</label>
+                  <button id="opcao2">
+                  <a target="_blank" href="https://drive.google.com/drive/folders/1srY_r2key1_E7e-QGQFkWEeJHQYT7qcm?usp=sharing">
+                  <i class="uil uil-medal w-10"></i>
+                  </a>
+                  </button>
+            </li>
+
+           
+            </ul>
+            </div>
+        
 
 
         <footer className="footer mt-auto py-3 bg-light text-center"> 
