@@ -1,7 +1,5 @@
 {
   "projects": {
-    "default": "kabehlinks",
-    "a": "kabehlinks-ce520"
-  },
-  "targets": {}
+    "default": "kabehlinks"
+  }
 }
