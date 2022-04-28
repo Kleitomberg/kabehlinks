@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import perfilImg from '../assets/perfil.jpg';
+import perfilImg from '../assets/perfil1.png';
 import Modal from 'react-modal';
 import emailjs from 'emailjs-com';
 import fecharImg from '../assets/fechar.png';
@@ -115,6 +115,7 @@ export function Home(){
       <br/><br/>
                     <p> 
                        Me chamo kleitomberg, sou formado em Gestão da Ti, possuo um grande interesse pela area da tecnologia sobre tudo em programação, edição de video e web designer.
+                       
                     </p>
             </div>
 
@@ -133,8 +134,9 @@ export function Home(){
                             <div className="skills-title"> 
                             <h1> Desenvolvimento Frontend</h1>
                             <span className="skills-subtitle">
-                              1 ano mais! </span>
-                            </div>                   
+                              2 anos mais! </span>
+                            </div> 
+
                             <i  class="uil uil-angle-down skills-arrow "></i>
                             </div> 
                             
@@ -222,6 +224,19 @@ export function Home(){
                                     </div>
 
                                 </div>
+
+                                <div className="skills-data">
+
+                                    <div className="skills-titles"> 
+                                    <h3 className="skills-name"> Django</h3>
+                                          <span className="skills-number"> 80%</span>
+                                    </div>
+
+                                    <div className="skills-bar">
+                                    <span className="skills-porcentagem skills-php"> </span>
+                                    </div>
+
+                                    </div>
 
                                 <div className="skills-data">
 
@@ -432,19 +447,21 @@ export function Home(){
             <ul>
             <li className="curriculo">
                   <label for="opcao1" className="curriculo">Currículo</label>
-                  <button id="opcao1">
                   <a target="_blank" href="https://drive.google.com/file/d/1dWEdPggibduzif_9wARwV1YPErvisJ4O/view?usp=sharing">
-                  <i class="uil uil-book"></i>
-                  </a>
+                  <button id="opcao1">                 
+                  <i class="uil uil-book"></i>                  
                   </button>
+                  </a>
             </li>
             <li>
                   <label for="opcao2">Certificados</label>
-                  <button id="opcao2">
                   <a target="_blank" href="https://drive.google.com/drive/folders/1srY_r2key1_E7e-QGQFkWEeJHQYT7qcm?usp=sharing">
+                  <button id="opcao2">
+                 
                   <i class="uil uil-medal w-10"></i>
-                  </a>
+                 
                   </button>
+                  </a>
             </li>
 
            
